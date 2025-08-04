@@ -2,7 +2,6 @@
   "name": "primordium-indexer-api",
   "description": "Minimal Typescript indexer for Store",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
     "@koa/bodyparser": "^6.0.0",
     "@koa/cors": "^4.0.0",

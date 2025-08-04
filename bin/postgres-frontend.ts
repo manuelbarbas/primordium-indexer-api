@@ -57,5 +57,8 @@ router.get("/readyz", (ctx) => {
 server.use(router.routes());
 server.use(router.allowedMethods());
 
-server.listen({ host: env.INDEXER_HOST, port: env.INDEXER_PORT });
+const port = process.env.PORT || env.INDEXER_PORT || 3003;
+const host = env.INDEXER_HOST || '0.0.0.0'; 
+
+server.listen({ host: host, port });
 console.log(`postgres indexer frontend listening on http://${env.INDEXER_HOST}:${env.INDEXER_PORT}`);

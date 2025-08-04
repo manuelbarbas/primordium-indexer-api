@@ -4,7 +4,7 @@ import { z, ZodError, ZodTypeAny } from "zod";
 // Host and port the indexer is listening on
 export const frontendEnvSchema = z.object({
   INDEXER_HOST: z.string().default("0.0.0.0"),
-  INDEXER_PORT: z.coerce.number().positive().default(3002),
+  INDEXER_PORT: z.coerce.number().positive().default(3003),
 });
 
 // Configuration for the MUD indexer writer

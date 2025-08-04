@@ -3,23 +3,6 @@
   "description": "Minimal Typescript indexer for Store",
   "license": "MIT",
   "type": "module",
-  "main": "./dist/bin/postgres-frontend.js",
-  "bin": {
-    "postgres-frontend": "./dist/bin/postgres-frontend.js"
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "pnpm run build:js",
-    "build:js": "tsup",
-    "clean": "pnpm run clean:js",
-    "clean:js": "rimraf dist",
-    "dev:watch": "tsx watch bin/postgres-frontend",
-    "dev": "tsx bin/postgres-frontend",
-    "lint": "eslint .",
-    "start": "NODE_ENV=production tsx dist/bin/postgres-frontend"
-  },
   "dependencies": {
     "@koa/bodyparser": "^6.0.0",
     "@koa/cors": "^4.0.0",

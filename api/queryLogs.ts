@@ -10,9 +10,9 @@ import { debug } from '../src/util/debug';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Handle CORS
-  if (setCorsHeaders(req, res)) {
+ /* if (setCorsHeaders(req, res)) {
     return; // Preflight request handled
-  }
+  }*/
 
   // Authenticate request
   if (!authenticate(req, res)) {

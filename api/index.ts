@@ -3,9 +3,9 @@ import { setCorsHeaders } from './_utils/cors';
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
 
-  if (setCorsHeaders(req, res)) {
+  /*if (setCorsHeaders(req, res)) {
     return; // Preflight request handled
-  }
+  }*/
 
   // Handle preflight requests
   if (req.method === "OPTIONS") {

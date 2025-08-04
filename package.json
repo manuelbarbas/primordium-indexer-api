@@ -3,6 +3,9 @@
   "description": "Serverless TypeScript indexer API for Store",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",

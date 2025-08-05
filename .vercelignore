@@ -1,9 +1,0 @@
-bin/
-dist/
-node_modules/
-.git/
-*.log
-.env.local
-.env.example
-tsup.config.ts
-.DS_Store
